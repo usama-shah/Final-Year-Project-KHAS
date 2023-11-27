@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khas - Online Mobile Phone Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #1a5276;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .toc {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .toc a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .toc a:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Khas - Online Mobile Phone Marketplace</h1>
+        <p>
+            Khas is an online marketplace for buying and selling used and new mobile phones. The platform aims to build
+            trust in online shopping by providing a safe and secure environment for users to transact mobile phones.
+            Sellers can post ads with full specifications, and buyers can make purchases through a secure payment
+            system. Khas ensures that payments are held until the phone is verified and delivered, reducing the risk of
+            scams and frauds.
+        </p>
+        <p><strong>Supervisor:</strong> Mr. Osamah Ahmed (Lecturer)</p>
+
+        <h3>Team Members</h3>
+        <ul>
+            <li>Syed Mushahid Hussain</li>
+            <li>Talha Khizar</li>
+            <li>Usama Shah</li>
+        </ul>
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#configuration">Configuration</a></li>
+                <li><a href="#database-setup">Database Setup</a></li>
+                <li><a href="#running-the-application">Running the Application</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+        </div>
+
+        <h2 id="prerequisites">Prerequisites</h2>
+        <p>
+            Before running the Khas project, make sure you have the following installed on your system:
+        </p>
+        <ul>
+            <li>PHP (minimum version 8.0)</li>
+            <li>Composer</li>
+            <li>Web server (Apache or Nginx)</li>
+            <li>MySQL or compatible database management system</li>
+        </ul>
+
+        <h2 id="installation">Installation</h2>
+        <p>
+            To get started with Khas, follow these steps:
+        </p>
+        <pre><code>
+        git clone https://github.com/syed-mushahid/khas.git
+        cd khas
+        composer install
+    </code></pre>
+
+        <h2 id="configuration">Configuration</h2>
+        <p>
+            1. Copy the <code>.env.example</code> file to create a <code>.env</code> file.
+        </p>
+        <pre><code>
+        cp .env.example .env
+    </code></pre>
+        <p>
+            2. Update the <code>.env</code> file with your environment-specific configuration settings, including the
+            database connection details.
+        </p>
+        <p>You can use and modify the available .env file if you are installing Khas using the zip file provided.</p>
+        <p>
+            3. Generate a unique application key.
+        </p>
+        <pre><code>
+        php artisan key:generate
+    </code></pre>
+
+        <h2 id="database-setup">Database Setup</h2>
+        <p>
+            1. Create a new database for Khas on your system.
+        </p>
+        <p>
+            2. Update the database configuration in the <code>.env</code> file with the new database details.
+        </p>
+        <p>
+            3. Run the database migrations to set up the necessary tables.
+        </p>
+        <pre><code>
+        php artisan migrate
+    </code></pre>
+        <p>
+            4. Optional: If you have seeders, you can populate the database with sample data.
+        </p>
+        <pre><code>
+        php artisan db:seed
+    </code></pre>
+
+        <h2 id="running-the-application">Running the Application</h2>
+        <p>
+            Start the development server to run the application locally.
+        </p>
+        <pre><code>
+        php artisan serve
+    </code></pre>
+        <p>
+            Access the application in your web browser using the provided URL (usually <a href="http://localhost:8000">http://localhost:8000</a>).
+        </p>
+
+        <h2 id="contributing">Contributing</h2>
+        <p>
+            We welcome contributions to the Khas project. If you would like to contribute, please fork the repository and
+            submit a pull request.
+        </p>
+
+        <h2 id="license">License</h2>
+        <p>
+            Khas is open-source software licensed under the <a href="LICENSE">MIT License</a>.
+        </p>
+    </div>
+</body>
+
+</html>

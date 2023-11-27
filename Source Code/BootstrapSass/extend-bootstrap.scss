@@ -1,0 +1,8 @@
+$primary:#0da1ec;
+$secondery: #09143b;
+@import "../vendor/twbs/bootstrap/scss/_functions";
+@import "../vendor/twbs/bootstrap/scss/_variables";
+
+$custom-theme-colors: ("khas-primary": #0da1ec,"khas-secondery": #09143b,);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+@import "../vendor/twbs/bootstrap/scss/bootstrap";
